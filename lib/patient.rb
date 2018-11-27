@@ -28,6 +28,7 @@ class Patient
        doc.collect do |name|
          
       binding.pry
+      end
     end
   end
 end
