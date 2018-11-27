@@ -25,7 +25,7 @@ class Patient
   
   def doctors
     self.appointment.select do |doc|
-      
+      binding.pry
       doc.name
     end
   end
