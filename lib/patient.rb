@@ -23,6 +23,7 @@ class Patient
   end
   
   def doctor
-    
+    self.all.select do |doc|
+      doc.doctor
   end
 end
