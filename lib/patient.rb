@@ -24,7 +24,7 @@ class Patient
   end
   
   def doctors
-    @@all.select do |doc|
+    @@all.collect do |doc|
       doc.name
     end
   end
