@@ -29,6 +29,8 @@ class Doctor
     patients = self.patients.select do |pt|
       pt.doctor == self
     end
-    patients.collect do ||
+    patients.collect do |patient|
+      patient.doctor
+    end
   end
 end
