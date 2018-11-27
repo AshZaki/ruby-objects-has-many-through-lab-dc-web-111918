@@ -26,7 +26,10 @@ class Patient
   def doctors
     self.appointments.select do |doc|
       list = doc.doctor
-      binding.pry
+      # binding.pry
+    end
+    list.collect do |name|
+      name.doctor
     end
   end
 end
