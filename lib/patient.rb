@@ -24,7 +24,7 @@ class Patient
   end
   
   def doctors
-    @@all.collect do |doc|
+    self.appointments.select do |doc|
       doc.name
     end
   end
