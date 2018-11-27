@@ -24,6 +24,6 @@ class Patient
   
   def doctor
     self.all.select do |doc|
-      doc.doctor
+      doc.patient
   end
 end
