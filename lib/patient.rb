@@ -29,6 +29,7 @@ class Patient
       
     end
     doc.appointments.collect do |doc_name|
+      binding.pry
       doc_name.doctor
       binding.pry
     end
