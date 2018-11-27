@@ -29,5 +29,6 @@ class Patient
     end
     doc.collect do |doc_name|
       doc_name.doctor
+    end
   end
 end
