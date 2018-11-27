@@ -26,10 +26,10 @@ class Doctor
   
   def patients
     # binding.pry
-    appointments = self.appointment.select do |pt|
-      pt.doctor == self
+    appointments = self.appointment.select do |appointment|
+      appointment.doctor == self
     end
-    patients.collect do |patient|
+    appointments.collect do |patient|
       patient.doctor
     end
   end
