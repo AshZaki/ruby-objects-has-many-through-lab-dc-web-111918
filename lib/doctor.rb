@@ -25,6 +25,8 @@ class Doctor
   end
   
   def patients
-    
+    self.all.select do |pt|
+      binding.pry
+    end
   end
 end
