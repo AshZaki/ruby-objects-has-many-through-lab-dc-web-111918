@@ -27,7 +27,8 @@ class Doctor
   def patients
     # binding.pry
     patients = self.patients.select do |pt|
-      pt.patient
+      pt.doctor == self
     end
+    
   end
 end
