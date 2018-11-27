@@ -27,5 +27,7 @@ class Patient
     @@all.select do |doc|
       doc.appointments
     end
+    doc.collect do |doc_name|
+      doc_name.doctor
   end
 end
