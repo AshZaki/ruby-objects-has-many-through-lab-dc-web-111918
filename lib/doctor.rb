@@ -29,8 +29,8 @@ class Doctor
     appointments = self.appointment.select do |appointment|
       appointment.doctor == self
     end
-    appointments.collect do |patient|
-      patient.doctor
+    appointments.collect do |appointment|
+      appointment.patient
     end
   end
 end
