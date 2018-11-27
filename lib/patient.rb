@@ -26,10 +26,11 @@ class Patient
   def doctors
     @@all.select do |doc|
       doc.appointments
-      binding.pry
+      
     end
     doc.appointments.collect do |doc_name|
       doc_name.doctor
+      binding.pry
     end
   end
 end
