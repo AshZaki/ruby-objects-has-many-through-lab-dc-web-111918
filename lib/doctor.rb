@@ -13,6 +13,6 @@ class Doctor
   end
   
   def new_appointment(patient_name,date)
-    
+    Appointment.new()
   end
 end
